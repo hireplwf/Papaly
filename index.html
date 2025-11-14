@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>我的书签面板</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <aside id="sidebar" class="sidebar">
+    <header>
+      <h1>我的书签</h1>
+    </header>
+    <nav id="sections"></nav>
+    <footer>由 Cloudflare Pages 托管 · 私有收藏请用私人仓库</footer>
+  </aside>
+
+  <main id="main" class="main">
+    <div class="header-row">
+      <div>
+        <label id="current-section-title"> — </label>
+      </div>
+      <div>
+        <input id="search" placeholder="搜索书签（支持标题/URL）" />
+      </div>
+    </div>
+    <div id="grid" class="grid cols-3"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
